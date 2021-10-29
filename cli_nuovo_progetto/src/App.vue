@@ -39,18 +39,21 @@
 
     <v-main>
       <HelloWorld/>
+      <secondoComponente></secondoComponente>
     </v-main>
   </v-app>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld';
+import MioPrimoComponente from '@/components/MioPrimoComponente.vue'
 
 export default {
   name: 'App',
 
   components: {
     HelloWorld,
+    'secondoComponente': MioPrimoComponente
   },
 
   data: () => ({
